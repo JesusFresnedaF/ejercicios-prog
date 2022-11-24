@@ -1,4 +1,6 @@
 # ejercicios-prog
+~~~
+
 //valores negativos
         while (min < 0) {
             System.out.println("Error. Numero negativo. Volver a intentar");
@@ -27,3 +29,4 @@
             min++;
             sec = sec - 60;
         }
+~~~
