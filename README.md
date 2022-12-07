@@ -35,3 +35,30 @@ public static int binarySearch(int arr[], int x) {
 ~~~
 
 ## BURBUJA JUMI
+~~~
+//declaración de variables
+        int nums[] = {5, 4, 3, 2, 1};
+        int aux;
+        boolean ordenado = false;
+        int i = 0;
+        
+        //metodo burbuja
+        while((i < nums.length) || !(ordenado)){
+            ordenado = true;
+            for (int j = 0; j < nums.length - 1; j++) {
+                if(nums[j] > nums[j + 1]){
+                    ordenado = false;
+                    aux = nums[j];
+                    nums[j] = nums[j + 1];
+                    nums[j + 1] = aux;
+                }
+            }
+            i++;
+        }
+        
+        //output
+        for (int l = 0; l < nums.length; l++) {
+            System.out.print(nums[l] + ", ");
+            
+        }
+~~~
